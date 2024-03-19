@@ -34,4 +34,12 @@
 
 ### Q10.
 
+// Answer: A
+
 ### Q11.
+
+Answer: A
+
+### Q12.
+
+Answer: D
