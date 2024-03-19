@@ -29,14 +29,14 @@
 // Q2.
 // predict the output of the statements mentioned in the program?
 
-function quiz() {
-  var a = 10;
-  let b = (c = 20);
-  console.log(b); // Statement 1
-}
-quiz();
-console.log(c); // Statement 2
-console.log(a); // Statement 3
+// function quiz() {
+//   var a = 10;
+//   let b = (c = 20);
+//   console.log(b); // Statement 1
+// }
+// quiz();
+// console.log(c); // Statement 2
+// console.log(a); // Statement 3
 
 // Statement 1: 20
 // Statement 2: 20
@@ -332,80 +332,34 @@ and the value of the “refreshes” placeholder, respectively? */
 
 // Q10.
 
-const Create = {
-  template: `<div>{{message}}</div>`,
-  computed: {
-    message() {
-      return this.$route.query.update
-        ? "This is create page"
-        : "This is update page";
-    },
-  },
-};
-const router = new VueRouter({
-  routes: [{ path: "/", component: Create }],
-});
+// const Create = {
+//   template: `<div>{{message}}</div>`,
+//   computed: {
+//     message() {
+//       return this.$route.query.update
+//         ? "This is create page"
+//         : "This is update page";
+//     },
+//   },
+// };
+// const router = new VueRouter({
+//   routes: [{ path: "/", component: Create }],
+// });
 
-new Vue({
-  el: "#app",
-  router,
-});
+// new Vue({
+//   el: "#app",
+//   router,
+// });
 
-// Suppose the application is running on “http://127.0.0.1:8080”. What will be the value of message property of Create component for “http://127.0.0.1:8080/#/?update=true” ?
+// Suppose the application is running on “http://127.0.0.1:8080”.
+// What will be the value of message property of
+// Create component for “http://127.0.0.1:8080/#/?update=true” ?
 
 // “This is create page”
 // “This is update page”
 // null
 // None of the above.
 
-// Q11.
-// Consider the following Vue application with script app.js and markup index.html.
-
-// const fruits = ["Apple", "abiu", "Acrola", "ackee"];
-
-// const app = new Vue({
-//   el: "#app",
-//   template: `<div>
-//   <input
-//     type="text"
-//     placeholder="search for fruits"
-//     v-model="filter_text"
-//   />
-//   <ul v-for="fruit in fruits_temp">
-//     <li>{{fruit}}</li>
-//   </ul>
-// </div>`,
-//   data: {
-//     fruits: ["Apple", "abiu", "Acrola", "ackee"],
-//     fruits_temp: [...fruits],
-//     filter_text: "",
-//   },
-//   watch: {
-//     filter_text() {
-//       this.fruits_temp = this.fruits.filter((fruit) => {
-//         return this.filter_text
-//           ? fruit.startsWith(this.filter_text == "A" ? "a" : "A")
-//           : this.fruits;
-//       });
-//     },
-//   },
-// });
-
-// Suppose the application is running on http://localhost:8080”.
-// What will be rendered if the user types ‘A’ in the input box?
-
-// abiu
-// ackee
-
-// Apple
-// Acrola
-
-// Apple
-// abiu
-// Acrola
-// ackee
-
-// None of the above
 async function processData(data) {
   return await JSON.stringify(data);
 }
